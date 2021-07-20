@@ -1,20 +1,19 @@
 package shapes;
 
+// step 3:
 abstract class GraphicObject {
     //define member variables - variables that will/can be used by all
     // subclasses
-    // define a shape's starting postion
-    int x,y;
+    // define a shape's starting position using x and y
+ // step 4a:
     
     //non-abstract (regular) method that can be implemented the same no
     // matter what the subclass is
-    void moveTo(int newX, int newY){
-        System.out.printf("%nNew coordinates: %s %s%n", newX, newY);
-    };
+// step 4b:
+
     
     // abstract methods, that can be used by every subclass of
     // GraphicObject, but will be implemented differently
-    abstract void draw();
-    abstract void resize();
-    abstract void color();
+// step 4c:
+
 }
