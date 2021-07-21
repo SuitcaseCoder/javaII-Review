@@ -1,25 +1,25 @@
 # Abstract-Classes-Review
 
-##Abstract Class
+## Abstract Class
 - a class that is declared abstract using the `abstract` keyword
 - it may or may not include abstract methods.
 - Abstract classes **cannot** be instantiated, but they can be subclassed.
 -  you can declare fields that are not static and final, and define public, protected, and private concrete methods.
 
-##Abstract Method and its implementation
+## Abstract Method and its implementation
 - a method that's declared but is not implemented
 - subclasses of the abstract classes holding the abstract methods must 
   provide implementation for these abstract methods
 - if the subclass does **not** implement the abstract method, then the 
   subclass must be declared `abstract` itself
   
-##Why/When to use Abstract Classes
+## Why/When to use Abstract Classes
 - You expect that classes that extend your abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private).
 - example of an abstract class:
     - `AbstractMap` and its subclasses: `HashMap, TreeMap, ConcurrentHashMap`
     - many of the subclasses __share__ methods which are all defined in the `AbstractMap` `abstract` class : `get, put, isEmpty, containsKey, containsValue`
 
-##Let's try it out:
+## Let's try it out:
  1. open up a java project and in the `src` folder create a `shapes` package;
  2. in the `shapes` package, create a new java class named `GraphicObject`
  3. make GraphicObject an abstract class using the `abstract` keyword:
